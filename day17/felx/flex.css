@@ -1,0 +1,129 @@
+.nav{
+    width: 100%;
+    height: 40px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+#nav_img{
+    width:40px;
+    height:40px;
+}
+.nav div{
+    width: 20%;
+    height: 40px;
+    
+    font-size:10px ;
+    font-weight: bold;
+    
+}
+.main_div{
+    width: 100%;
+    height: 65em;
+    /* border: 2px solid red; */
+    position:relative;
+    top: 90px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.main_div div{
+    width: 23.7%;
+    height:30em;
+    /* border: 2px solid red; */
+}
+img{
+    width: 100%;
+    height: 24em;
+}
+span{
+    font-size: 1.3em;
+}
+.next_page{
+    width: 22%;
+    height: 20px;
+    position: relative;
+    top: 110px;
+    display:flex;
+    flex-direction: row;
+    left: 42%;
+}
+.next_page div{
+    width: 22px;
+    height: 20px;
+    
+    
+}
+.next_page div:hover{
+    background-color: gray;
+}
+.hr{
+    position: relative;
+    top: 140px;
+}
+h2{
+    margin-top: 160px;
+    text-align: center;
+}
+#center_img{
+    width: 75%;
+    height: 60%;
+    margin-left: 150px;
+}
+h3{
+    text-align: center;
+}
+.footer{
+    width: 80%;
+    height: 20em;
+    /* border: 2px solid red; */
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.footer div{
+    width: 32.6%;
+    height:20em ;
+    /* border: 2px solid green; */
+    
+}
+.h2{
+    font-size: 30px;
+
+}
+#p{
+    font-size: 20px;
+}
+
+
+.footer div:nth-child(3) .div{
+    
+    width: 99%;
+    height: 14em;
+    /* border: 2px solid red; */
+    position: relative;
+    top: 20px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content:space-evenly;
+}
+.div div{
+    width: 23%;
+    height: 2em;
+    border: 2px solid rgb(27, 12, 14);
+    border-radius: 30px;
+    margin-left: 3px;
+    text-align: center;
+    background-color: gainsboro;
+    
+}
+.div div:hover{
+    background-color:grey ;
+}

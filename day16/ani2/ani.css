@@ -1,0 +1,86 @@
+
+div {
+    width: 10em;
+    height: 10em;
+    background-color: rgb(137, 175, 136);
+    position: absolute;
+    
+    left: 20em;
+    border-radius: 30em;
+    animation-name: boll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes boll {
+ 50%{background-color:red;
+transform: translate(30px,40px);
+margin-top: 60em;
+}
+100%{
+    background-color: green;
+    margin-bottom: 30em;
+    transform: translate(30px,40px);
+   
+}    
+
+}
+div:nth-child(2){
+    width: 10em;
+    height: 10em;
+    background-color: pink;
+    margin-left: 13em;
+    animation-name: boll2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.2s;
+}
+@keyframes boll2{
+    50%{background-color:red;
+        transform: translate(30px,40px);
+        margin-top: 60em;
+        }
+        100%{
+            background-color: green;
+            margin-bottom: 30em;
+            transform: translate(30px,40px);
+           
+        }    
+        
+
+}
+div:nth-child(3){
+    width: 10em;
+    height: 10em;
+    background-color: rgb(137, 175, 136);
+    position: absolute;
+    
+    left: 50em;
+    border-radius: 30em;
+    animation-name: boll3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+}
+@keyframes boll3 {
+    30%{
+        background-color: red;
+        transform: translate(30px,40px);
+        margin-top: 50em;
+    }
+    70%{
+        background-color: green;
+    }
+}
+div:nth-child(4){
+    width: 10em;
+    height: 10em;
+    background-color: rgb(137, 175, 136);
+    position: absolute;
+    
+    left: 70em;
+    border-radius: 30em;
+    animation-name: boll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}

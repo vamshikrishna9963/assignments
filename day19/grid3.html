@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main_div{
+            width: 880px;
+            display:grid;
+            background-color: yellow;
+            grid-template-columns:200px 250px 200px 200px;
+            grid-template-rows: 100px 100px 100px;
+            padding:10px;
+            row-gap:6px;
+            column-gap: 10px;
+        }
+        .item{
+            background-color: red;
+            padding: 30px;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="main_div">
+        <div class="item" style="grid-row:1/4;background-color: rgb(25, 166, 10);">1</div>
+        <div class="item" style="grid-column: 2/4;background-color: rgb(25, 166, 10);">2</div>
+        <div class="item" style="grid-row: 2/3;background-color: orange;">3</div>
+        <div class="item">4</div>
+        <div class="item" style="grid-row: 2/3;">5</div>
+        <div class="item" style="grid-row:2/4;background-color: green;">6</div>
+        <div class="item">7</div>
+        <div class="item" style="background-color: orange;">8</div>
+        
+    </div>
+</body>
+</html>

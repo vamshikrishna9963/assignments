@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+}
+img{
+    width: 100%;
+    height: 230px;
+    background-color: orange;
+    margin: 0px;
+}
+.div{
+    font-size: 30px;
+    color: white;
+    position: relative;
+    bottom: 180px;
+    left: 400px;
+    font-weight: bold;
+}
+p{
+    font-size: 16px;
+    color: white;
+    position: relative;
+    bottom:170px ;
+    left: 470px;
+}
+button{
+    font: 7;
+    color: white;
+    background-color: rgb(219, 58, 58);
+    position: relative;
+    bottom: 160px;
+    left: 510px;
+}
+h2{
+    text-transform:uppercase;
+    position: relative;
+    left: 440px;
+    bottom: 50px;
+    /* margin-left: 400px ;
+    margin-bottom: 80px; */
+}
+.content{
+    width: 300px;
+    height: 200px;
+    /* border: 2px solid black; */
+    float: left;
+    margin-left: 80px;
+    
+}
+.imga{
+    width: 40px;
+    height: 30px;
+    margin-left: 120px;
+}
+.icon{
+    font-weight: bold;
+    position: relative;
+    left: -80px;
+    top: 10px;
+}
+i{
+    text-align: justify;
+    
+}
+.red{
+    width: 100%;
+    height: 60px;
+    background-color: brown;
+    position:relative;
+    top: 200px;
+}
+#well{
+    position: relative;
+    bottom: 190px;
+    margin-left: 100px;
+    display: inline-block;
+    color: white;
+
+}
+    .our{
+        width: 100%;
+        height: 180px;
+        background-color: rgb(186, 168, 168);
+        position: relative;
+        top: 200px;
+        }
+    .num{
+        position:absolute;
+        bottom: 14px;
+        width: 30%;
+        height: 150px;
+        margin-left: 150px;
+        background-color: white;
+        float: left;
+    }
+    .inside{
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        font-size: 20px;
+        color: black;
+        line-height: 2rem;
+        text-transform: capitalize;
+    }
+    #b1{
+        font-size:0.6em;
+    }
+    #b2{
+        font-size: 0.6em;
+        color: red;
+    }
+    .img2{
+        width: 18px;
+        height: 13px;
+    }
+    .num2{
+        width: 25%;
+        height: 150px;
+        background-color: rgb(160, 43, 43);
+        position: absolute;
+        bottom: 14px;
+        left: 50%;
+    }
+    #b4{
+        border-right: 1px solid rgb(215, 206, 206);
+        display: inline-block;
+        text-transform: capitalize ;
+        margin-top: 60px;
+        margin-left: 20px;
+        font-weight: bolder;
+        color: white;
+    }
+    .cls{
+        width: 100%;
+        height: 29em;
+        /* background-color: red; */
+        /* border: 2px solid red; */
+        position: relative;
+        top: 11em;
+    }
+    #cls{
+        width: 25%;
+        height: 27em;
+        /* border: 2px solid red; */
+        float: left;
+        margin-left: 4.3rem;
+        line-height: 20px;
+        }
+    #img3{
+        height: 10em;
+    }
+    #b6{
+        font-size:0.6em;
+    }
+    #b7{
+        font-size: 0.6em;
+        color: red;
+    }
+    
