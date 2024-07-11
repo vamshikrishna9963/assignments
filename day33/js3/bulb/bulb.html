@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 200px;
+            height: 400px;
+            /* border: 2px solid red; */
+        }
+        button{
+            
+            width: 100px;
+            margin-left: 30px;
+            position: relative;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <button>
+        <!-- ON -->
+    </button>
+    <button>
+        OFF
+    </button>
+    <img> 
+         
+</img> 
+    <script>
+        var btn=document.getElementsByTagName('button')
+        btn[0].innerText='ON'
+        
+        var img=document.getElementsByTagName('img')
+        img[0].src='https://static.vecteezy.com/system/resources/previews/001/350/109/large_2x/electric-light-bulb-on-a-white-background-photo.jpg'
+        btn[0].addEventListener('click',function(e){
+            if(img[0].src=='https://cdn.mos.cms.futurecdn.net/HaPnm6P7TZhPQGGUxtDjAg-320-80.jpg'){
+            // img[0].src='https://static.vecteezy.com/system/resources/previews/001/350/109/large_2x/electric-light-bulb-on-a-white-background-photo.jpg'
+            }
+            else{
+
+            img[0].src='https://cdn.mos.cms.futurecdn.net/HaPnm6P7TZhPQGGUxtDjAg-320-80.jpg'
+            }
+        })
+        btn[1].addEventListener('click',function(){
+            if(img[0].src=='https://cdn.mos.cms.futurecdn.net/HaPnm6P7TZhPQGGUxtDjAg-320-80.jpg'){
+            img[0].src='https://static.vecteezy.com/system/resources/previews/001/350/109/large_2x/electric-light-bulb-on-a-white-background-photo.jpg'
+            // btn[1].style.backgroundColor='yellow'
+            }
+            else{
+
+            // img[0].src='https://cdn.mos.cms.futurecdn.net/HaPnm6P7TZhPQGGUxtDjAg-320-80.jpg'
+            }
+        })
+     
+
+    </script>
+</body>
+</html>

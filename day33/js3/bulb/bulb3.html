@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1></h1>
+    <!-- <h1></h1> -->
+     <!-- <img> -->
+      <img width="200px">
+    <script>
+        // localStorage.removeItem('name')
+        var img=document.getElementsByTagName('img');
+        var h1=document.getElementsByTagName('h1');
+        // localStorage.setItem('on','ON')
+        // ('link1','https://cdn.mos.cms.futurecdn.net/HaPnm6P7TZhPQGGUxtDjAg-320-80.jpg')
+        h1[0].innerText='click here for swich';
+        h1[0].addEventListener('click',function(){
+           if( img[0].src==localStorage.getItem('link')){
+            // document.body.appendChild(img)
+            h1[0].innerText=localStorage.getItem('off')
+            img[0].src=localStorage.getItem('link1')
+            
+           }
+        else{
+            h1[0].innerText=localStorage.getItem('on')
+
+            img[0].src=localStorage.getItem('link')
+        }
+        })
+       
+    </script>
+</body>
+</html>

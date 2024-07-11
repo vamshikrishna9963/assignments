@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 300px;
+            height: 300px;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <button>
+
+    </button>
+    <img>
+    <script>
+        var btn=document.getElementsByTagName('button');
+        btn[0].innerText='ON';
+        var h1=document.getElementsByTagName('img');
+        h1[0].src='https://static.vecteezy.com/system/resources/previews/001/350/109/large_2x/electric-light-bulb-on-a-white-background-photo.jpg'
+        
+        btn[0].src=''
+        btn[0].addEventListener('click',function(){
+            if(btn[0].innerText=='ON'){
+                btn[0].innerText='OFF'
+                btn[0].style.color='red'
+                btn[0].style.backgroundColor='lightblue'
+
+                // var h1=document.getElementsByTagName('img');
+                h1[0].src='https://cdn.mos.cms.futurecdn.net/HaPnm6P7TZhPQGGUxtDjAg-320-80.jpg'
+            }
+            else{
+                btn[0].innerText='ON'
+                btn[0].style.color='blue'
+                btn[0].style.backgroundColor='lightyellow'
+
+                //  var h1=document.getElementsByTagName('img');
+                h1[0].src='https://static.vecteezy.com/system/resources/previews/001/350/109/large_2x/electric-light-bulb-on-a-white-background-photo.jpg'
+            }
+        })
+    </script>
+</body>
+</html>

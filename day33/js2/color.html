@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+   <h1>
+    <!-- my name is vamshi -->
+   </h1>
+   <button>
+    entet the week name 
+   </button>
+    <script>
+    var h1=document.getElementsByTagName('h1');
+    var btn=document.getElementsByTagName('button');
+    btn[0].addEventListener('click',function(){
+        var a=prompt('enter day');
+        if(a=='sunday'){
+            h1[0].style.backgroundColor='red'
+            // h1[0].innerText='sunday'
+        }
+        else if(a=='monday'){
+            h1[0].style.backgroundColor='blue'
+        }
+        else if(a=='tuesday'){
+            h1[0].style.backgroundColor='yellow'
+        }
+        else if(a=='wednesday'){
+            h1[0].style.backgroundColor='green'
+        }
+        else if(a=='thursday'){
+            h1[0].style.backgroundColor='pink'
+        }
+        else if(a=='friday'){
+            h1[0].style.backgroundColor='purple'
+        }
+        else if(a=='saturday'){
+            h1[0].style.backgroundColor='orange'
+        }
+        else{
+            h1[0].style.backgroundColor='black'
+        }
+    })
+    </script>
+</body>
+</html>

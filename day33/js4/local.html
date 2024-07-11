@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button>
+    open user names
+  </button>
+  <button>
+    
+  </button>
+  <h1></h1>
+  <h1></h1>
+  <h1></h1>
+  <h1></h1>
+
+  <script>
+    localStorage.setItem('user name1','vamshi')
+    localStorage.setItem('user name2','chinna')
+    localStorage.setItem('user name3','gopi')
+    localStorage.setItem('user name4','chintu')
+          var btn=document.getElementsByTagName('button')
+          var h1=document.getElementsByTagName('h1')
+          btn[0].addEventListener('click',function(){
+            h1[0].innerText=localStorage.getItem('user name1')
+            h1[1].innerText=localStorage.getItem('user name2')
+            h1[2].innerText=localStorage.getItem('user name3')
+            h1[3].innerText=localStorage.getItem('user name4')
+            h1[3].appendChild(btn[1])
+btn[1].innerText='clear local storage'
+          })   
+          btn[1].addEventListener('click',function(){
+            h1[0].innerText=localStorage.removeItem('user name1')
+            h1[1].innerText=localStorage.removeItem('user name2')
+            h1[2].innerText=localStorage.removeItem('user name3')
+            h1[3].innerText=localStorage.removeItem('user name4')
+          })            
+  </script>
+</body>
+</html>

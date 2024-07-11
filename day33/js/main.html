@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+    <style>
+        #he{
+            height: 40px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #he div{
+            border:0.2px solid;
+            /* height: 5px; */
+            padding: 4px;
+        }
+        a{
+         text-decoration:none;
+         color: black;
+        }
+        #he div:hover{
+            background-color:rgb(77, 74, 74);
+            transform:scale(1,2);
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Filter category wise section on data from fake store API   
+    </h1>
+    <div id="he">
+    <div>
+        
+    </div>
+    <div>
+        
+    </div>
+    <div>
+    </div>
+    <div>
+    </div>
+    </div>
+    <iframe src="" frameborder="4" name="tar" width="1090px" height="500px" >
+
+    </iframe> 
+    <!-- <a href="../js3/bulb/bulb2.html" target="tar">click</a> -->
+     <script>
+     
+
+        var a=document.getElementsByTagName('div')
+        var anc=document.createElement('a');
+        anc.href='./index.html';
+        anc.innerText="men's category"
+        anc.target='tar'
+        a[1].appendChild(anc)
+        // document.body.appendChild(anc)
+    //   /
+    var anc=document.createElement('a');
+        anc.href="./women's.html";
+        anc.innerText="women's category"
+        anc.target='tar'
+        a[2].appendChild(anc)
+        var anc=document.createElement('a');
+        anc.href='./jew.html';
+        anc.innerText="jewelery category"
+        anc.target='tar'
+        a[3].appendChild(anc)
+        var anc=document.createElement('a');
+        anc.href='./ele.html';
+        anc.innerText="electronics category"
+        anc.target='tar'
+        a[4].appendChild(anc)
+    
+
+</script>
+</body>
+</html>

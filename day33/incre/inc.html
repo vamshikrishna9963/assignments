@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #btn{
+            width: 70px;
+            margin-left: 3px;
+            margin-top: 10px;
+        }
+        div::before{
+            content:'the total products is = ';
+        }
+        #one::before{
+            content:'AMOUNT OF THE PRODUCT = ';
+        }
+        #two::before{
+            content:'GST OF THE PRODUCT = ';
+        }
+    </style>
+</head>
+<body>
+    <button>-</button>
+    <button>0</button>
+    <button>+</button>
+    <button></button><br>
+    <button id="btn">click me</button><br>
+    
+    <div></div>
+    <div id="one"></div>
+    <!-- <div></div> -->
+    <div id="two"></div>
+<script>
+    var btn=document.getElementsByTagName('button')
+    var div=document.getElementsByTagName('div')
+    btn[3].innerText='200'
+    var span=document.getElementsByTagName('span')
+    btn[2].addEventListener('click',function(){
+      btn[1].innerText= +btn[1].innerText+1
+      btn[3].innerText=189*btn[1].innerText
+      div[0].innerText= +div[0].innerText+1
+      div[1].innerText=189*btn[1].innerText
+      div[2].innerText=6.5/100*btn[3].innerText
+    })
+    btn[0].addEventListener('click',function(){
+
+      btn[1].innerText=+btn[1].innerText-1
+      div[0].innerText= +div[0].innerText-1
+      btn[3].innerText=189*btn[1].innerText
+      div[1].innerText=189*btn[1].innerText
+      div[2].innerText=6.5/100*btn[3].innerText
+
+
+    })
+
+</script>
+</body>
+</html>
